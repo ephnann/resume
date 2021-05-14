@@ -61,6 +61,8 @@ ul {
     float: right;
   }
 
+
+
 #profile-img {
     background-image: url("../images/profile.png");
     background-repeat: no-repeat;
@@ -114,6 +116,7 @@ ul {
 }
 #logo-type {
     text-align: center;
+    margin: 2.85em;
 }
 
 
