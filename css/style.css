@@ -6,6 +6,10 @@
     --sp-4: 4vw;
     --sp-5: 8vw;
     --sp-6: 16vw;
+    --tm-1: 120ms;
+    --tm-2: 240ms;
+    --tm-3: 480ms;
+    --tm-4: 1000ms;
 }
 
 body {
@@ -62,7 +66,14 @@ ul {
     float: right;
   }
 
-
+.banner {
+  box-shadow: var(--ev-1);
+  transition: all var(--tm-1) ease-in-out;
+}
+.banner:hover {
+  box-shadow: var(--ev-2);
+  transform: scale(1.01);
+}
 
 #profile-img {
     background-image: url("../images/profile.png");
@@ -148,7 +159,7 @@ ul {
     background-color: transparent;
     border: 2px solid var(--accent);
     -webkit-transition: .4s;
-    transition: .4s;
+    transition: all var(--tm-1) ease-in-out;
   }
   .slider:before {
     position: absolute;

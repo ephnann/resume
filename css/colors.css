@@ -19,11 +19,11 @@
 
 
 /* INITIALISE */
-/* 
+
 [data-theme="dark"] {
     --text: var(--dark-text);
     --background: var(--dark-background);
-} */
+}
 
 body {
     color: var(--text);
