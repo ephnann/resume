@@ -5,6 +5,7 @@
     --sp-3: 3.2vw;
     --sp-4: 4vw;
     --sp-5: 8vw;
+    --sp-6: 16vw;
 }
 
 body {
@@ -13,7 +14,7 @@ body {
 }
 
 #page {
-    margin: var(--sp-2) var(--sp-5);
+    margin: var(--sp-2) var(--sp-6);
     display: grid;
     grid-template-columns: 5fr 9fr;
 
@@ -116,7 +117,66 @@ ul {
 }
 #logo-type {
     text-align: center;
-    margin: 2.85em;
 }
 
+#toggle-dark {
+    display: flex;
+    align-items: center;
+}
+#toggle-dark h3 {
+    padding: 0 var(--sp-1);
+    margin: 0;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 64px;
+    height: 32px;
+  }
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: transparent;
+    border: 2px solid var(--accent);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    left: 4px;
+    bottom: 3px;
+    background-color: var(--accent);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: transparent;
+  }
+  
 
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(30px);
+    -ms-transform: translateX(30px);
+    transform: translateX(30px);
+  }
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
