@@ -9,21 +9,28 @@
     --a-dark: #0026ca;
     --text: #1b1b1b;
     --background: #ffffff;
-    --neutral: #BDBDBD;
+    --neutral: #ffffff;
     /* Dark Mode */
     --dark-primary: #424242;
     --dark-text: #ffffff;
     --dark-background: #1b1b1b;
-    --dark-neutral: #424242;
+    --dark-neutral: #202020;
 }
 
 
 /* INITIALISE */
+[data-theme="light"] {
+    --text: var(--text);
+    --background: var(--background);
+    --neutral: var(--neutral);
+}
 
 [data-theme="dark"] {
     --text: var(--dark-text);
     --background: var(--dark-background);
+    --neutral: var(--dark-neutral);
 }
+
 
 body {
     color: var(--text);
