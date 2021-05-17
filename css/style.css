@@ -34,6 +34,12 @@ body {
     margin: var(--sp-2) var(--sp-6);
     display: grid;
     grid-template-columns: 5fr 9fr;
+    grid-template-areas: 'profile-img header'
+                         'contact statement'
+                         'education experience'
+                         'licences experience'
+                         'references skills'
+
 
 }
 
@@ -91,19 +97,48 @@ ul {
 }
 
 #profile-img {
+    grid-area: profile-img;
     background-image: url("../images/profile.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    height: 32vh;
     margin: var(--sp-2);
   }
-
+#header {
+  grid-area: header;
+}
+#dark-mode {
+  display: flex;
+  justify-content: center;
+  float: right;  
+  }
+#logo-type {
+  text-align: center;
+}
+#contact {
+  grid-area: contact;
+}
+#education {
+  grid-area: education;
+}
+#licences {
+  grid-area: licences;
+}
+#references {
+  grid-area: references;
+}
+#statement {
+  grid-area: statement;
+}
+#experience {
+  grid-area: experience;
+}
 #skills {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    padding: var(--sp-1);
-    border-radius: var(--sp-1);
+  grid-area: skills;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: var(--sp-1);
+  border-radius: var(--sp-1);
 }
 #mySkills {
     padding: var(--sp-1);
@@ -111,15 +146,7 @@ ul {
 #tools {
     padding: var(--sp-1);
 }
-#logo-type {
-  text-align: center;
-}
 
-#dark-mode {
-  display: flex;
-  justify-content: center;
-  float: right;
-}
 .theme-switcher {
   display: flex;
   justify-content: center;
@@ -139,7 +166,7 @@ label {
   width: 4em;
   border: 0.20em solid var(--accent);
   background-color: var(--background);
-  border-radius: 4em;
+  border-radius: 8em;
   position: relative;
 }
 label::after {
@@ -147,7 +174,7 @@ label::after {
   content: '';
   width: 1.5em;
   height: 1.5em;
-  border-radius: 4em;
+  border-radius: 8em;
   background-color: var(--accent);
   top: 50%;
   left: 10%;
@@ -157,3 +184,42 @@ label::after {
 input:checked + label::after {
   left: calc(100% - 2em);
 }
+
+
+
+@media only screen and (max-width: 864px) {
+  #page {
+    margin: var(--sp-2) var(--sp-4);
+    grid-template-columns: 1fr;
+    grid-template-areas: 'header'
+                        'profile-img'
+                         'contact'
+                         'statement'
+                         'experience'
+                         'skills'
+                         'education'
+                         'licences'
+                         'references';
+  }
+  #profile-img {
+    min-height: 16vh;
+  }
+  #skills {
+    display: block;
+  }
+  ul li::before {
+    margin-left: -2em;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  ul li::before {
+    margin-left: -4em;
+  }
+}
+/* 
+--bp-01: 360px;
+--bp-1: 864px;
+--bp-2: 1366px;
+--bp-3: 1920px; 
+*/
