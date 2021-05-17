@@ -1,0 +1,46 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 8px;
+  }
+
+h1 {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+h3 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+h4 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+ul {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+li {
+    color: var(--accent);
+}
+
+@media screen and (max-width: 360px) {}
+
+
+@media screen and (min-width: 361px) and (max-width: 864px) {}
+
+@media screen and (min-width: 865px) and (max-width: 1366px) {}
+
+@media screen and (min-width: 1361px) {}
+

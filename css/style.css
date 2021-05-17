@@ -12,6 +12,7 @@
     --tm-4: 1000ms;
 }
 
+
 .spacer-1 {
   height: var(--sp-1);
 }
@@ -24,10 +25,8 @@
 .spacer-4 {
   height: var(--sp-4);
 }
-
-body {
-    font-family: 'Open Sans', sans-serif;
-    font-size: var(--sp-1);
+.spacer-5 {
+  height: var(--sp-5);
 }
 
 #page {
@@ -39,50 +38,12 @@ body {
                          'education experience'
                          'licences experience'
                          'references skills'
-
-
-}
-
-h1 {
-    font-size: var(--sp-4) !important;
-    line-height: var(--sp-5) !important;
-}
-
-h2 {
-    font-size: var(--sp-2) !important;
-    font-weight: 600 !important;
-    line-height: var(--sp-2) !important;
-}
-h3 {
-    font-size: var(--sp-1) !important;
-    font-weight: 600 !important;
-    line-height: var(--sp-1) !important;
-}
-
-p {
-    font-size: var(--sp-1) !important;
-    font-weight: 400;
-    line-height: var(--sp-2);
-}
-strong {
-    font-weight: 600 !important;
 }
 
 a {
   color: var(--accent);
 }
 
-ul {
-    list-style: none;
-}
-  ul li::before {
-    content: "\2022";  
-    color: #304ffe; 
-    font-weight: 700; 
-    display: inline-block; 
-    width: 1em; 
-    margin-left: -1em;
-  }
 
 .banner {
   padding: var(--sp-1);
@@ -91,6 +52,7 @@ ul {
   box-shadow: var(--ev-1);
   transition: all var(--tm-1) ease-in-out;
 }
+
 .banner:hover {
   box-shadow: var(--ev-2);
   transform: scale(1.01);
@@ -162,19 +124,19 @@ label {
   cursor: pointer;
   display: block;
   text-indent: -99999px;
-  height: 2em;
-  width: 4em;
-  border: 0.20em solid var(--accent);
+  height: 1.5rem;
+  width: 3rem;
+  border: 0.20rem solid var(--accent);
   background-color: var(--background);
-  border-radius: 8em;
+  border-radius: 2rem;
   position: relative;
 }
 label::after {
   position: absolute;
   content: '';
-  width: 1.5em;
-  height: 1.5em;
-  border-radius: 8em;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 2rem;
   background-color: var(--accent);
   top: 50%;
   left: 10%;
@@ -182,7 +144,7 @@ label::after {
   transition: all var(--tm-1) ease;
 }
 input:checked + label::after {
-  left: calc(100% - 2em);
+  left: calc(100% - 1.3rem);
 }
 
 
@@ -202,21 +164,30 @@ input:checked + label::after {
                          'references';
   }
   #profile-img {
-    min-height: 16vh;
+    min-height: 24vh;
   }
   #skills {
     display: block;
   }
-  ul li::before {
-    margin-left: -2em;
-  }
+.banner {
+  padding: var(--sp-5);
+  margin: var(--sp-2);
+}
+#skills {
+  padding: var(--sp-5);
+  margin: var(--sp-2);
+}
 }
 
-@media only screen and (max-width: 600px) {
-  ul li::before {
-    margin-left: -4em;
+@media screen and (min-width: 865px) and (max-width: 1366px) {
+  #page {
+    margin: var(--sp-2) var(--sp-2);
   }
 }
+  
+
+
+
 /* 
 --bp-01: 360px;
 --bp-1: 864px;
