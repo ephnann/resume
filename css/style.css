@@ -64,7 +64,7 @@ a {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    margin: var(--sp-2);
+    margin: var(--sp-2) var(--sp-2) var(--sp-6) var(--sp-2);
   }
 #header {
   grid-area: header;
