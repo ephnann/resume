@@ -35,12 +35,3 @@ li {
     color: var(--accent);
 }
 
-@media screen and (max-width: 360px) {}
-
-
-@media screen and (min-width: 361px) and (max-width: 864px) {}
-
-@media screen and (min-width: 865px) and (max-width: 1366px) {}
-
-@media screen and (min-width: 1361px) {}
-

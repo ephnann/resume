@@ -47,7 +47,7 @@ a {
 
 .banner {
   padding: var(--sp-1);
-  margin: var(--sp-1);
+  margin: 0 var(--sp-1) var(--sp-1) 0;
   border-radius: var(--sp-1);
   box-shadow: var(--ev-1);
   transition: all var(--tm-1) ease-in-out;
