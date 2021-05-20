@@ -188,5 +188,6 @@ input:checked + label::after {
 }
 
 #thumbnail {
-  display: none;
+  position: absolute;
+  top: -999999px;
 }
