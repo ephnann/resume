@@ -187,8 +187,3 @@ input:checked + label::after {
   }
 }
 
-#thumbnail {
-  opacity: 0;
-  height: 0;
-  width: 0;
-}
