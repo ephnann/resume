@@ -187,3 +187,6 @@ input:checked + label::after {
   }
 }
 
+#thumbnail {
+  display: none;
+}
