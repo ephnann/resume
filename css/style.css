@@ -186,12 +186,9 @@ input:checked + label::after {
     margin: var(--sp-2) var(--sp-2);
   }
 }
-  
 
-
-/* 
---bp-01: 360px;
---bp-1: 864px;
---bp-2: 1366px;
---bp-3: 1920px; 
-*/
+#thumbnail {
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
